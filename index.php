@@ -2,10 +2,10 @@
 
 <head>
     <title>The Vault | Project Gideon | Max Azarcon | Gamer, Geek, Web Designer</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    
-    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <?php
+        include('components/styles.php');
+        include('components/scripts.php');
+    ?>
 </head>
 
 <body>
@@ -15,10 +15,10 @@
                 <div id="login">
                     <h2>Vault Login</h2>
                 </div>
-                <form id="vault-login" action="components/login.php" method="post">
+                <form id="vault-login" action="" method="post">
                     <input type="text" id="username" name="username" class="login-field" placeholder="USERNAME">
                     <input type="password" id="password" name="password" class="login-field" placeholder="PASSWORD">
-                    <button id="loginbutton" type="submit">Enter</button>
+                    <button id="loginbutton" type="submit" onClick="verify();">Enter</button>
                 </form>
             </div>
         </div>
